@@ -1,0 +1,186 @@
+/* Load Google Fonts */
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap);
+
+/* global style */
+
+
+/* remove the margin and padding and Specifies the behavior of the width and height properties to border box*/
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* add body background and set up color and */
+
+body {
+    background: linear-gradient(0deg, rgba(136, 203, 171, 1) 0%, rgb(21, 41, 114) 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+/* Smooth Scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* global style ! */
+
+
+/*nav bar*/
+
+.navbar_menu {
+    top: 0%;
+    z-index: 1;
+    background: linear-gradient(rgb(120, 134, 138), rgb(97, 186, 97));
+    position: relative;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+    margin: 5px 3px;
+    padding: 10px 0;
+}
+
+a {
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 7px;
+}
+
+.stacky {
+    width: 100%;
+    position: fixed;
+}
+
+
+/*active class form links*/
+
+.active {
+    background-color: rgb(0, 80, 109);
+}
+
+
+/*nav bar !*/
+
+
+/*header*/
+
+.main_hero {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.add_new_section {
+    padding: 2%;
+    border: none;
+    background-color: rgba(50, 205, 50, 0.57);
+    color: rgb(5, 34, 5);
+    font: 1.5rem;
+    transform: scale(0.8);
+    transition: 1s;
+}
+
+.add_new_section:hover {
+    background-color: rgb(50, 205, 50);
+    box-shadow: 0px 0px 10px 10px limegreen;
+    color: rgb(0, 0, 0);
+    transform: scale(0.85);
+}
+
+.add_in_nav {
+    padding: 10px;
+    border: none;
+    background-color: rgba(4, 17, 4, 0.57);
+    color: rgb(252, 252, 252);
+    font: 1.5rem;
+    transition: 1s;
+    margin: 5px;
+    margin-top: -5px;
+    float: right;
+}
+
+.add_in_nav:hover {
+    background-color: rgb(50, 205, 50);
+    box-shadow: 0px 0px 5px 5px rgb(64, 141, 64);
+    color: rgb(0, 0, 0);
+}
+
+
+/*header!*/
+
+
+/*section*/
+
+.section_container {
+    overflow: hidden;
+}
+
+.section_container h2 {
+    text-align: center;
+    margin-bottom: 12%;
+}
+
+section {
+    margin: 5vh 0 0 0;
+    padding-top: 5vh;
+    background-color: rgba(0, 0, 0, 0.158);
+    color: rgba(0, 0, 0, 0.426);
+    padding: 10% 5%;
+    border-radius: 15px;
+    align-self: center;
+    transform: scale(0.9);
+    opacity: 0.15;
+}
+
+section h2 {
+    font-size: 3rem;
+}
+
+#scrollToTop {
+    margin: 10%;
+    background-color: rgb(65, 82, 65);
+    color: white;
+    padding: 12px 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    float: right;
+}
+
+#scrollToTop:hover {
+    transform: scale(1.2);
+}
+
+.page_footer {
+    margin: 5vmin;
+    float: left;
+    clear: both;
+}
+
+
+/*section!*/
+
+
+/* add media query */
+
+@media only screen and (max-width: 500px) {
+    section h2 {
+        font-size: 2rem;
+    }
+    .add_in_nav {
+        transform: scale(0.9);
+    }
+}
+
+
+/* add media query! */
