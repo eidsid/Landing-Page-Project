@@ -2,7 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap);
 
-/* global style */
+/* start global style */
 
 
 /* remove the margin and padding and Specifies the behavior of the width and height properties to border box*/
@@ -30,10 +30,10 @@ html {
 }
 
 
-/* global style ! */
+/* end global style  */
 
 
-/*nav bar*/
+/* start nav-bar */
 
 .navbar_menu {
     top: 0%;
@@ -41,6 +41,13 @@ html {
     background: linear-gradient(rgb(120, 134, 138), rgb(97, 186, 97));
     position: relative;
     width: 100%;
+    max-height: 110px;
+    overflow-y: auto;
+    transition: 1s;
+}
+
+.navbar_menu:hover {
+    background: linear-gradient(rgb(51, 164, 196), rgb(97, 186, 97));
 }
 
 ul li {
@@ -69,10 +76,10 @@ a {
 }
 
 
-/*nav bar !*/
+/* end nav bar */
 
 
-/*header*/
+/* start header */
 
 .main_hero {
     margin-top: 5vh;
@@ -106,6 +113,7 @@ a {
     margin: 5px;
     margin-top: -5px;
     float: right;
+    display: none;
 }
 
 .add_in_nav:hover {
@@ -114,36 +122,48 @@ a {
     color: rgb(0, 0, 0);
 }
 
-
-/*header!*/
-
-
-/*section*/
-
-.section_container {
-    overflow: hidden;
+.add_in_nav_active {
+    display: block;
 }
+
+
+/* end header */
+
+
+/* start section */
 
 .section_container h2 {
     text-align: center;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
 }
 
 section {
-    margin: 5vh 0 0 0;
-    padding-top: 5vh;
+    margin-top: 7vh;
+    padding: 16% 5%;
     background-color: rgba(0, 0, 0, 0.158);
     color: rgba(0, 0, 0, 0.426);
-    padding: 10% 5%;
+    height: 70vh;
     border-radius: 15px;
     align-self: center;
     transform: scale(0.9);
-    opacity: 0.15;
+    opacity: 0.4;
+    transition: 0.5s;
 }
 
 section h2 {
     font-size: 3rem;
 }
+
+.hightlight {
+    color: whitesmoke;
+    opacity: 1;
+}
+
+
+/*end section*/
+
+
+/* scroll btn */
 
 #scrollToTop {
     margin: 10%;
@@ -161,6 +181,9 @@ section h2 {
     transform: scale(1.2);
 }
 
+
+/* footter */
+
 .page_footer {
     margin: 5vmin;
     float: left;
@@ -168,14 +191,16 @@ section h2 {
 }
 
 
-/*section!*/
-
-
-/* add media query */
+/*start add media query */
 
 @media only screen and (max-width: 500px) {
+    /* section */
     section h2 {
         font-size: 2rem;
+    }
+    /* for navbar */
+    .navbar_menu {
+        max-height: 100px;
     }
     .add_in_nav {
         transform: scale(0.9);
@@ -183,4 +208,4 @@ section h2 {
 }
 
 
-/* add media query! */
+/* end add media query */
